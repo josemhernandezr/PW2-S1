@@ -1,0 +1,56 @@
+.bg-p-cover {
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../img/fondo.png");
+    animation: bganimate 60s 1;
+}
+@media (min-width:300px) {
+    .bg-p-cover {
+        background-image: url("../img/fondo_sm.png");
+    }
+}
+@media (min-width:576px) {
+    .bg-p-cover {
+        background-image: url("../img/fondo_sm.png");
+    }
+}
+@media (min-width:992px) {
+    .bg-p-cover {
+        background-image: url("../img/fondo.png");
+    }
+}
+@keyframes bganimate {
+    50% {
+        background-size: 115%;
+    }
+}
+.nav-link{
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 95%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+}
+.nav-link.active{
+    background-size: 40% 2px;
+    background-position-x: center;
+}
+.nav-link:focus,
+.nav-link:hover{
+    background-size: 40% 2px;
+    background-position-x: center;
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+}
+.titulo{
+    font-family: 'Cairo', sans-serif;
+}
+
